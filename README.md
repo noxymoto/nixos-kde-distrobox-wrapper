@@ -7,4 +7,5 @@ Please note the following:
 - This method is inherently hacky; I'm pretty sure KDE doesn't support this, though wayland/distrobox/strong primitives make it fully functional in most cases
 - I envision using this for either ephemeral sessions or persistent KDE "sub-distros" that can both borrow from your global nixpkgs (those work well in all the containers) and allow you to install and use packages from the container
 - Feel free to modify the scripts to your liking. They were vibe coded based on a distrobox experiment and tweaked till they worked. You could probably make it work without the launcher by just tweaking the distrobox primitives.
-- GNOME was difficult to get working because it expects its own login profile. I wouldn't waste your time. 
+- GNOME was difficult to get working because it expects its own login profile. I wouldn't waste your time.
+- I wanted to get tty boot working but couldn't. See tty-experiment.sh which is a similar idea but uses bwrap instead of podman.
